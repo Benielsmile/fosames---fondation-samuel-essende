@@ -1,0 +1,8 @@
+{
+  "name": "FOSAMES - Fondation Samuel Essende",
+  "description": "Une organisation non gouvernementale dediée à l'autonomisation des femmes, la protection des enfants et la promotion de la justice sociale en RDC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
