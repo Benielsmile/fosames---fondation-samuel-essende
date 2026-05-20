@@ -45,7 +45,7 @@ export default function Hero() {
           viewport={{ once: true }}
         >
           {/* Main Video Container: Sharp Pro Proportions */}
-          <div className="relative z-10 w-full h-[500px] md:h-[700px] overflow-hidden shadow-[20px_20px_0px_0px_rgba(18,93,68,1)] border-2 border-ink bg-ink/5">
+          <div className="relative z-10 w-full h-[500px] md:h-[700px] overflow-hidden rounded-[40px]">
             <video 
               autoPlay 
               muted 
@@ -54,7 +54,6 @@ export default function Hero() {
               poster={HERO_IMAGE}
               className="w-full h-full object-cover transition-transform duration-[10s] ease-out group-hover:scale-105"
             >
-              {/* Using a highly reliable public video for testing and visual parity */}
               <source src="https://test-videos.co.uk/vids/big_buck_bunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4" type="video/mp4" />
               <source src="https://assets.mixkit.co/videos/preview/mixkit-small-group-of-african-school-children-smiling-together-34533-large.mp4" type="video/mp4" />
               <img 
@@ -64,14 +63,17 @@ export default function Hero() {
               />
             </video>
             
-            {/* Pro Overlays */}
-            <div className="absolute inset-0 bg-ink/10 mix-blend-overlay pointer-events-none" />
-            <div className="absolute inset-0 border-[16px] border-paper/5 pointer-events-none" />
+            {/* Blended gradient overlays */}
+            <div className="absolute inset-0 bg-gradient-to-t from-paper via-transparent to-paper/30 pointer-events-none" />
+            <div className="absolute inset-0 bg-primary/10 mix-blend-multiply pointer-events-none" />
             
-            {/* HUD / Scanning Effect for that 'Pro' feel */}
+            {/* Soft edge blend */}
+            <div className="absolute inset-0 rounded-[40px] ring-1 ring-ink/10 pointer-events-none" />
+            
+            {/* HUD / Scanning Effect */}
             <div className="absolute top-8 left-8 z-20 flex gap-2">
               <div className="w-1 h-1 bg-red-500 rounded-full animate-pulse" />
-              <span className="text-[7px] font-black uppercase tracking-widest text-paper/80">LIVE FEED // KINSHASA</span>
+              <span className="text-[7px] font-black uppercase tracking-widest text-paper/80 drop-shadow-lg">LIVE FEED // KINSHASA</span>
             </div>
 
             <motion.div 
@@ -81,17 +83,17 @@ export default function Hero() {
             />
           </div>
 
-          {/* Geometric Accents (Sharp, not rounded) */}
-          <div className="absolute -top-6 -right-6 w-32 h-32 border-r border-t border-ink/20 z-0" />
-          <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-accent/5 z-0" />
+          {/* Subtle geometric frame accents */}
+          <div className="absolute -top-4 -right-4 w-24 h-24 border-r border-t border-primary/20 z-0 rounded-tr-3xl" />
+          <div className="absolute -bottom-4 -left-4 w-36 h-36 border-l border-b border-primary/10 z-0 rounded-bl-3xl" />
           
-          {/* Legend/Info Tag */}
-          <div className="absolute -bottom-6 right-8 z-20 bg-ink p-6 border-l-4 border-accent shadow-2xl">
-            <div className="flex flex-col gap-1">
-              <span className="text-[8px] font-black uppercase tracking-[0.3em] text-accent">Contenu Documenté</span>
-              <span className="text-paper text-[10px] font-bold">Terrain RDC • Campagne 2024</span>
-              <div className="mt-2 flex gap-1">
-                {[1,2,3,4].map(i => <div key={i} className="w-1 h-1 bg-paper/20" />)}
+          {/* Legend/Info Tag - blended */}
+          <div className="absolute -bottom-4 right-6 z-20 bg-paper/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow-lg border border-ink/5">
+            <div className="flex items-center gap-3">
+              <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
+              <div className="flex flex-col">
+                <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-primary">Terrain RDC</span>
+                <span className="text-ink/50 text-[9px] font-medium">Campagne 2024</span>
               </div>
             </div>
           </div>
