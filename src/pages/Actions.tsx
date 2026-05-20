@@ -1,7 +1,7 @@
 import { Users, Shield, CheckCircle2 } from "lucide-react";
 
-const WOMEN_IMAGE = "/src/assets/images/fosames_women_leadership_congolese_1779174764252.png";
-const CHILDREN_IMAGE = "/src/assets/images/fosames_children_inclusion_education_1779174783988.png";
+const WOMEN_IMAGE = "/images/fosames_women_leadership_congolese_1779174764252.png";
+const CHILDREN_IMAGE = "/images/fosames_children_inclusion_education_1779174783988.png";
 
 export default function Actions() {
   return (

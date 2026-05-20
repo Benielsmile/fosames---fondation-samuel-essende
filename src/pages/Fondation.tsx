@@ -1,6 +1,6 @@
 import { Heart, Scale, Shield } from "lucide-react";
 
-const HERO_IMAGE = "/src/assets/images/fosames_hero_african_mother_child_1779174745353.png";
+const HERO_IMAGE = "/images/fosames_hero_african_mother_child_1779174745353.png";
 
 export default function Fondation() {
   return (

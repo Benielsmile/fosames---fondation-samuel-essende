@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const HERO_IMAGE = "/src/assets/images/fosames_hero_african_mother_child_1779174745353.png";
+const HERO_IMAGE = "/images/fosames_hero_african_mother_child_1779174745353.png";
 
 export default function Hero() {
   return (
@@ -44,7 +44,7 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          {/* Main Video Container: Sharp Pro Proportions */}
+          {/* Main Video Container */}
           <div className="relative z-10 w-full h-[500px] md:h-[700px] overflow-hidden rounded-[40px]">
             <video 
               autoPlay 

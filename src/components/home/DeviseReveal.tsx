@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+
+
 export default function DeviseReveal() {
   const words = ["JUSTICE", "ÉGALITÉ", "ESPOIR"];
   // Triple the words for seamless infinite scrolling
