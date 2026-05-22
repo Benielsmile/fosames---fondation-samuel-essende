@@ -24,7 +24,7 @@ export default function Statuts() {
               </div>
               <div>
                 <h4 className="font-bold text-ink uppercase text-[10px] tracking-widest mb-2">Article 3 : Siège Social</h4>
-                <p>Le siège social est situé au N° 13 avenue BUSUJANO, KASA VUBU, Kinshasa, RDC.</p>
+                <p>Le siège social est situé au N° 13 RUE  BUSU-MELO, KASA VUBU, Kinshasa, RDC.</p>
               </div>
             </div>
 

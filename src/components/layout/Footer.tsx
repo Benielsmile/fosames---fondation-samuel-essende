@@ -63,7 +63,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-2">
             <span className="text-[9px] uppercase tracking-widest text-paper/10 font-bold">Réalisé par</span>
-            <span className="font-serif italic text-accent tracking-tighter text-lg">Beniel M & ZORANE</span>
+            <span className="font-serif italic text-accent tracking-tighter text-lg">Beniel M & XORANE</span>
           </div>
         </div>
       </div>

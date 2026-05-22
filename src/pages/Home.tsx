@@ -237,8 +237,8 @@ function ContactSection() {
               <div>
                 <h4 className="font-bold text-[10px] uppercase tracking-widest text-ink/40 mb-2">Adresse du Siège</h4>
                 <p className="text-lg font-light leading-relaxed">
-                  Avenue BUSUJANO N° 13, <br/>
-                  Commune de KASA VUBU, Kinshasa, RDC.
+                  13 RUE  BUSU-MELO, <br/>
+                  Commune de KASA-VUBU, Kinshasa, RDC.
                 </p>
               </div>
             </div>
