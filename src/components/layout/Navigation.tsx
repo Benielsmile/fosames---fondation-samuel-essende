@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Globe, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "../../assets/images/logo.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +18,7 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 w-full z-[100] border-b border-ink/5 bg-paper/80 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group" onClick={() => setIsMenuOpen(false)}>
-          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all">
-            <Globe className="text-primary w-6 h-6" />
-          </div>
+          <img src={logo} alt="FOSAMES" className="h-10 w-auto" />
           <div className="flex flex-col">
             <span className="font-serif text-xl font-bold tracking-tight text-primary leading-none">FOSAMES</span>
             <span className="text-[8px] uppercase tracking-[0.3em] font-bold text-ink/40 mt-1">Fondation Samuel Essende</span>
